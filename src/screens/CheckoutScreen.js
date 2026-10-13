@@ -21,7 +21,7 @@ export default function CheckoutScreen({ onBack, onOrderSuccess }) {
 
   const [address, setAddress] = useState(user.savedAddress);
   const [selectedPayment, setSelectedPayment] = useState('apple_pay');
-  const [selectedTip, setSelectedTip] = useState(2.0); // $2 tip default
+  const [selectedTip, setSelectedTip] = useState(2.0); // रू2 tip default
   const [note, setNote] = useState('');
   const [isPlacingOrder, setIsPlacingOrder] = useState(false);
 
@@ -43,7 +43,7 @@ export default function CheckoutScreen({ onBack, onOrderSuccess }) {
     {
       id: 'wallet',
       name: 'Café Bliss Wallet',
-      subtitle: '$45.50 balance available',
+      subtitle: 'रू45.50 balance available',
       icon: 'wallet-outline',
       iconColor: Colors.accent,
     },
@@ -58,9 +58,9 @@ export default function CheckoutScreen({ onBack, onOrderSuccess }) {
 
   const tipOptions = [
     { label: 'No Tip', value: 0 },
-    { label: '$1.00', value: 1.0 },
-    { label: '$2.00', value: 2.0 },
-    { label: '$3.00', value: 3.0 },
+    { label: 'रू1.00', value: 1.0 },
+    { label: 'रू2.00', value: 2.0 },
+    { label: 'रू3.00', value: 3.0 },
   ];
 
   const grandTotal = parseFloat((total + selectedTip).toFixed(2));
@@ -224,7 +224,7 @@ export default function CheckoutScreen({ onBack, onOrderSuccess }) {
       <View style={styles.stickyBar}>
         <View>
           <Text style={styles.totalLabel}>Total to Pay</Text>
-          <Text style={styles.totalValue}>${grandTotal.toFixed(2)}</Text>
+          <Text style={styles.totalValue}>रू{grandTotal.toFixed(2)}</Text>
         </View>
 
         <TouchableOpacity

@@ -93,7 +93,7 @@ export default function ProfileScreen({
           label: 'Gift Cards & Vouchers',
           icon: 'gift-outline',
           detail: '2 Active Vouchers',
-          onPress: () => Alert.alert('Vouchers', '1. COFFEE20 (20% Off)\n2. WELCOME5 ($2.50 Off)'),
+          onPress: () => Alert.alert('Vouchers', '1. COFFEE20 (20% Off)\n2. WELCOME5 (रू2.50 Off)'),
         },
       ],
     },

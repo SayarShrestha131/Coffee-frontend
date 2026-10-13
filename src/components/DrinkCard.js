@@ -48,7 +48,7 @@ export default function DrinkCard({
 
           <View style={styles.bottomRow}>
             <Text style={styles.price}>
-              <Text style={styles.currency}>$</Text>
+              <Text style={styles.currency}>रू</Text>
               {product.price.toFixed(2)}
             </Text>
             <TouchableOpacity
@@ -100,7 +100,7 @@ export default function DrinkCard({
 
         <View style={styles.bottomRow}>
           <Text style={styles.price}>
-            <Text style={styles.currency}>$</Text>
+            <Text style={styles.currency}>रू</Text>
             {product.price.toFixed(2)}
           </Text>
           <TouchableOpacity

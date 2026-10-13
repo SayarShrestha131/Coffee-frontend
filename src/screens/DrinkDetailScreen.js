@@ -189,7 +189,7 @@ export default function DrinkDetailScreen({ product, onBack, onGoToCart }) {
                               isSelected && styles.extraPriceTextSelected,
                             ]}
                           >
-                            +${size.extraPrice.toFixed(2)}
+                            +रू{size.extraPrice.toFixed(2)}
                           </Text>
                         )}
                       </TouchableOpacity>
@@ -274,7 +274,7 @@ export default function DrinkDetailScreen({ product, onBack, onGoToCart }) {
                             isSelected && styles.pillTextSelected,
                           ]}
                         >
-                          {milk.name} {milk.extraPrice > 0 ? `(+$${milk.extraPrice.toFixed(2)})` : ''}
+                          {milk.name} {milk.extraPrice > 0 ? `(+रू${milk.extraPrice.toFixed(2)})` : ''}
                         </Text>
                       </TouchableOpacity>
                     );
@@ -307,7 +307,7 @@ export default function DrinkDetailScreen({ product, onBack, onGoToCart }) {
                         />
                         <Text style={styles.toppingName}>{topping.name}</Text>
                         <Text style={styles.toppingPrice}>
-                          +${topping.price.toFixed(2)}
+                          +रू{topping.price.toFixed(2)}
                         </Text>
                       </TouchableOpacity>
                     );
@@ -343,7 +343,7 @@ export default function DrinkDetailScreen({ product, onBack, onGoToCart }) {
           >
             <Text style={styles.addToCartText}>Add to Cart</Text>
             <View style={styles.priceBadge}>
-              <Text style={styles.priceBadgeText}>${totalPrice.toFixed(2)}</Text>
+              <Text style={styles.priceBadgeText}>रू{totalPrice.toFixed(2)}</Text>
             </View>
           </TouchableOpacity>
         </View>

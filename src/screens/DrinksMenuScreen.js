@@ -125,7 +125,7 @@ export default function DrinksMenuScreen({
                 sortBy === 'price_low' && styles.sortChipTextActive,
               ]}
             >
-              Price $
+              Price रू
             </Text>
           </TouchableOpacity>
 

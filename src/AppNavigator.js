@@ -229,7 +229,7 @@ export default function AppNavigator() {
             onExploreMenu={() => setActiveTab('Menu')}
             onOpenDrawer={() => setIsDrawerOpen(true)}
             onOpenNotifications={() =>
-              Alert.alert('Cart Alerts', 'Free delivery applied on orders over $25!')
+              Alert.alert('Cart Alerts', 'Free delivery applied on orders over रू25!')
             }
           />
         );

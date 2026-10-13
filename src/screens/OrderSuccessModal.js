@@ -33,7 +33,7 @@ export default function OrderSuccessModal({
           <View style={styles.summaryBox}>
             <View style={styles.summaryRow}>
               <Text style={styles.summaryLabel}>Total Paid</Text>
-              <Text style={styles.summaryVal}>${order.total.toFixed(2)}</Text>
+              <Text style={styles.summaryVal}>रू{order.total.toFixed(2)}</Text>
             </View>
             <View style={styles.summaryRow}>
               <Text style={styles.summaryLabel}>Estimated Time</Text>

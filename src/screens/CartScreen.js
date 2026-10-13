@@ -169,7 +169,7 @@ export default function CartScreen({
                     {/* Quantity Stepper & Price Row */}
                     <View style={styles.itemFooterRow}>
                       <Text style={styles.itemPrice}>
-                        ${(item.unitPrice * item.quantity).toFixed(2)}
+                        रू{(item.unitPrice * item.quantity).toFixed(2)}
                       </Text>
 
                       <View style={styles.stepper}>
@@ -237,7 +237,7 @@ export default function CartScreen({
 
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>Subtotal</Text>
-                <Text style={styles.billValue}>${subtotal.toFixed(2)}</Text>
+                <Text style={styles.billValue}>रू{subtotal.toFixed(2)}</Text>
               </View>
 
               {discount > 0 && (
@@ -246,7 +246,7 @@ export default function CartScreen({
                     Promo Discount ({appliedPromo?.code})
                   </Text>
                   <Text style={[styles.billValue, { color: Colors.success }]}>
-                    -${discount.toFixed(2)}
+                    -रू{discount.toFixed(2)}
                   </Text>
                 </View>
               )}
@@ -256,20 +256,20 @@ export default function CartScreen({
                   {deliveryType === 'delivery' ? 'Delivery Fee' : 'Store Pickup Fee'}
                 </Text>
                 <Text style={styles.billValue}>
-                  {deliveryFee === 0 ? 'FREE' : `$${deliveryFee.toFixed(2)}`}
+                  {deliveryFee === 0 ? 'FREE' : `रू${deliveryFee.toFixed(2)}`}
                 </Text>
               </View>
 
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>Estimated Tax & Service</Text>
-                <Text style={styles.billValue}>${serviceTax.toFixed(2)}</Text>
+                <Text style={styles.billValue}>रू{serviceTax.toFixed(2)}</Text>
               </View>
 
               <View style={styles.billDivider} />
 
               <View style={styles.billTotalRow}>
                 <Text style={styles.totalLabel}>Total Amount</Text>
-                <Text style={styles.totalValue}>${total.toFixed(2)}</Text>
+                <Text style={styles.totalValue}>रू{total.toFixed(2)}</Text>
               </View>
             </View>
           </ScrollView>
@@ -278,7 +278,7 @@ export default function CartScreen({
           <View style={styles.stickyBar}>
             <View>
               <Text style={styles.stickyTotalLabel}>Total to Pay</Text>
-              <Text style={styles.stickyTotalValue}>${total.toFixed(2)}</Text>
+              <Text style={styles.stickyTotalValue}>रू{total.toFixed(2)}</Text>
             </View>
 
             <TouchableOpacity
